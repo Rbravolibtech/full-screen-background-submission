@@ -6,15 +6,33 @@
 	box-sizing: border-box;
 }
 
+/* Responsive Full Background Image Using CSS
+ * Tutorial URL: http://sixrevisions.com/css/responsive-background-image/
+*/
 body {
-	min-height: 10vh;
 	font-family: "Tangerine", serif;
-	font-size: 20px;
+	/* Location of the image */
 	background-image: url(image/mountains.jpg);
+
+	/* Image is centered vertically and horizontally at all times */
+	background-position: center center;
+
+	/* Image doesn't repeat */
 	background-repeat: no-repeat;
+
+	/* Makes the image fixed in the viewport so that it doesn't move when 
+	   the content height is greater than the image height */
 	background-attachment: fixed;
+
+	/* This is what makes the background image rescale based on its container's size */
 	background-size: cover;
+
+	/* Pick a solid background color that will be displayed while the background image is loading */
 	background-color: #464646;
+
+	/* SHORTHAND CSS NOTATION
+	 * background: url(background-photo.jpg) center center cover no-repeat fixed;
+	 */
 }
 
 /* For mobile devices */
@@ -47,7 +65,7 @@ body {
 h1 {
 	color: black;
 	text-transform: uppercase;
-	font-size: 60px;
+	font-size: 90px;
 	line-height: 80px;
 	font-weight: 900;
 	margin-top: 200px;
@@ -57,7 +75,7 @@ h1 {
 
 h2 {
 	color: black;
-	font-size: 40px;
+	font-size: 60px;
 	font-weight: 100;
 }
 
@@ -98,10 +116,11 @@ strong {
 	text-align: center;
 }
 
+/* welcome with paragraph */
 .box {
 	background-color: rgba(255, 255, 255, 0.8);
 }
-
+/* Discover now click here */
 .centered-text {
 	text-align: center;
 	background-color: rgba(0, 0, 0, 0.6);
